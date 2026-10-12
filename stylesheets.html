@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Intro To HTML - Intro to the Web</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js"></script>
+        <script>
+            // Run after page load
+            document.addEventListener("DOMContentLoaded", () => {
+                let dt = document.getElementById("date-target");
+                console.log(dt.innerText);
+                dt.innerHTML = insertDate();
+            });
+        </script>
+        <style>
+            .main-menu-link {
+                color: hotpink;
+                background-color: lightgray;
+            }
+            
+            #main-menu{
+                position: sticky;
+                top: 0;
+                background-color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header></header>
+
+        <nav id="main-menu">
+            <ul>
+                <li><a class="main-menu-link" href="index.html" style="color: aquamarine">Intro to Web</a></li>
+                <li><a class="main-menu-link" href="software.html">Web Authoring Software</a></li>
+                <li><a class="main-menu-link" href="structure.html">Page Structure</a></li>
+                <li><a class="main-menu-link" href="headings.html">Headings &amp; Hierarchy</a></li>
+                <li><a class="main-menu-link" href="formatting.html">Formatting Text</a></li>
+                <li><a class="main-menu-link" href="head.html">Head Elements</a></li>
+                <li><a class="main-menu-link" href="stylesheets.html">Stylesheets</a></li>
+            </ul>
+        </nav>
+        <p id="date-target">Insert Today's Date</p>
+        <img class="main_banner_image" src="images/bannerWide.jpg" />
+        <h1>An Introduction to the Web</h1>
+        <h2>What is the WWW, and how did it get there anyhow??</h2>
+        <main>
+            <p>
+                The world-wide web is the network of resources such as websites that work upon a series of protocols
+                e.g. HTTP; which are in turn reliant upon the internet; which is itself a network of computers which is
+                built upon a series of protocols IP/TCP for example.
+            </p>
+
+            <p>
+                I am going to write about &lt a &gt; and &lt /a &gt; which creates an anchor element, commonly used for
+                hyperlinks these days...
+            </p>
+
+            <p>
+                The web is commonly attributed to Tim Berners-Lee, who really put a lot of different protocols and ideas
+                together and wrote a specification which defined the web pretty much as we know it today.
+            </p>
+
+            <p>
+                Hyperlinks are one of the key features, as this allows us to link to lots of resources and produce
+                larger publications using this.
+            </p>
+
+            <p>
+                Websites are stored upon webservers, which are computers connected to the internet whose sole purpose is
+                to serve files to client machines that request them, usually those requests are made over HTTP, which is
+                done when we type a URL into the browsers address bar, or even when we use the search tool. Files are
+                managed on web servers using another protocol FTP (File Transfer Protocol); this allows us to put and
+                get files; HTTP has similar actions too.
+            </p>
+
+            <p>
+                When a client makes a request it does so to its ISP (Internet Service Provider) which will then look-up
+                the true location of the resource, by finding out its IP address from a DNS (Domain Name Server). Once
+                this has been achieved it can then retrieve the file and either display it within your web browser or
+                prompt you to download it.
+            </p>
+
+            <p>
+                The domain name is a meaningful name registered with a domain name registry such as Nominet (UK), these
+                store and administer domain names details such as the owner and the IP addresses of the servers the site
+                is located on. The domain refers to the meaningful name i.e. Facebook, and the TLD (Top Level Domain)
+                refers to the last part such as .com or .co.uk, which categorises the type of site or business.
+            </p>
+        </main>
+        <footer>My Name &copy; 2026</footer>
+    </body>
+</html>

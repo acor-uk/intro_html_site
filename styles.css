@@ -1,0 +1,33 @@
+body{
+width: 90%;
+margin:auto;
+}
+
+header{
+background-image: url(images/intoHTMLHeading.jpg);
+height: 150px;
+background-repeat: no-repeat;
+}
+
+nav{
+    border: thin solid black;
+}
+
+ul{
+}
+
+nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 5px;
+    background-color: darkgray;
+    padding: 2px;
+}
+
+li a{
+    color: white;
+}
+
+.main_banner_image{
+width: 100%;
+}
